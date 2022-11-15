@@ -167,7 +167,7 @@
       };
 
       var Snake = function () {
-        this.segments = [new Block(7, 5)];
+        this.segments = [new Block(15, 5)];
         this.direction = "right";
         this.nextDirection = "right";
         this.color = rColor();
@@ -293,8 +293,10 @@
         snake.move();
         snake.draw();
         apple.draw();
+        apple.draw();
+        
         drawBorder();
-      }, speed);
+      }, 100 - speed);
     </script>
   </body>
 </html>
